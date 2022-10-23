@@ -112,3 +112,27 @@ img{
     width: 100%;
     object-fit: cover;
 }
+
+/* media queries (medium devices) */
+@media screen and (max-width: 1024px){
+    .container {
+        width: var(--container-width-md);
+        margin: 0 auto;
+    }
+
+    section{
+        margin-top: 6rem;
+    }
+}
+
+/* media queries (small devices) */
+@media screen and (max-width: 600px){
+    .container {
+        width: var(--container-width-sm);
+        margin: 0 auto;
+    }
+
+    section > h2{
+        margin-top: 2rem;
+    }
+}
