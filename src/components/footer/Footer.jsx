@@ -59,7 +59,7 @@ const Footer = () => {
 
       <ul className="permalinks">
         {menuItems.map((item, index) => (
-          <li>
+          <li key={index}>
             <a href={item.href}>{item.name}</a>
           </li>
         ))}
@@ -67,7 +67,7 @@ const Footer = () => {
 
       <div className="footer__socials">
         {SocialFooter.map((item, index) => (
-          <a href={item.href} target="_blank">
+          <a key={index} href={item.href} target="_blank" rel="noreferrer">
             {item.icon}
           </a>
         ))}

@@ -86,7 +86,7 @@ const Services = () => {
           </div>
           <ul className="service__list">
             {firstCard.map((item, index) => (
-              <li>
+              <li key={index}>
                 {item.icon}
                 <p>{item.text}</p>
               </li>
@@ -99,7 +99,7 @@ const Services = () => {
           </div>
           <ul className="service__list">
             {secondCard.map((item, index) => (
-              <li>
+              <li key={index}>
                 {item.icon}
                 <p>{item.text}</p>
               </li>
@@ -112,7 +112,7 @@ const Services = () => {
           </div>
           <ul className="service__list">
             {thirdCard.map((item, index) => (
-              <li>
+              <li key={index}>
                 {item.icon}
                 <p>{item.text}</p>
               </li>

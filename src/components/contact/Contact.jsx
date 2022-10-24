@@ -51,22 +51,22 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           {articles.map((item, index) => (
-            <article className="contact__option">
+            <article key={index} className="contact__option">
               {item.icon}
               <h4>{item.title}</h4>
               <h5>{item.email}</h5>
               {item.title === "Email" && (
-                <a target="_blank" href={`mailto:${item.href}`}>
+                <a target="_blank" rel="noreferrer" href={`mailto:${item.href}`}>
                   Send a message
                 </a>
               )}
               {item.title === "Messenger" && (
-                <a target="_blank" href={item.href}>
+                <a target="_blank" rel="noreferrer" href={item.href}>
                   Send a message
                 </a>
               )}
               {item.title === "WhatsApp" && (
-                <a href={item.href} target="_blank">
+                <a href={item.href} target="_blank" rel="noreferrer">
                   Send a message
                 </a>
               )}

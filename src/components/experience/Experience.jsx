@@ -78,7 +78,7 @@ const Experience = () => {
           <h3>Frontend Development</h3>
           <div className="experience__content">
             {skillsFrontEnd.map((frontend, index) => (
-              <article className="experience__details">
+              <article key={index} className="experience__details">
                 {frontend.icon}
                 <div>
                   <h4>{frontend.programming_language}</h4>
@@ -92,7 +92,7 @@ const Experience = () => {
           <h3>Backend Development</h3>
           <div className="experience__content">
             {skillsBackEnd.map((frontend, index) => (
-              <article className="experience__details">
+              <article key={index} className="experience__details">
                 {frontend.icon}
                 <div>
                   <h4>{frontend.programming_language}</h4>

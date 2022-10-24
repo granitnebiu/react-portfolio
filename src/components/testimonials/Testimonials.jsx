@@ -48,11 +48,9 @@ const Testimonials = () => {
         spaceBetween={40}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
       >
         {testimonialsComments.map((item, index) => (
-          <SwiperSlide className="testimonial">
+          <SwiperSlide key={index} className="testimonial">
             <div className="client__avatar">
               <img src={item.avatar} alt={item.name} />
             </div>

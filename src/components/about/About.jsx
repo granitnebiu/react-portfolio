@@ -36,7 +36,7 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             {card.map((item, index) => (
-              <article className="about__card">
+              <article key={index} className="about__card">
                 {item.icon}
                 <h5>{item.title}</h5>
                 <small>{item.subTitle}</small>
