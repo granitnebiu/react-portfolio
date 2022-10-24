@@ -55,16 +55,17 @@ const Contact = () => {
               {item.icon}
               <h4>{item.title}</h4>
               <h5>{item.email}</h5>
-              {item === "Email" ? (
+              {item.title === "Email" && (
                 <a target="_blank" href={`mailto:${item.href}`}>
                   Send a message
                 </a>
-              ) : (
+              )}
+              {item.title === "Messenger" && (
                 <a target="_blank" href={item.href}>
                   Send a message
                 </a>
               )}
-              {item === "WhatsApp" && (
+              {item.title === "WhatsApp" && (
                 <a href={item.href} target="_blank">
                   Send a message
                 </a>
